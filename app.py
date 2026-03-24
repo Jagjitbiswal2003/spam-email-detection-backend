@@ -3,11 +3,6 @@ from flask_cors import CORS
 import joblib
 from preprocessing import clean_email
 
-import nltk
-
-nltk.download('punkt', quiet=True)
-nltk.download('stopwords', quiet=True)
-nltk.download('wordnet', quiet=True)
 
 app = Flask(__name__)
 CORS(app)
