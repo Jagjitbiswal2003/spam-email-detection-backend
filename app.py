@@ -5,9 +5,9 @@ from preprocessing import clean_email
 
 import nltk
 
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+nltk.download('punkt', quiet=True)
+nltk.download('stopwords', quiet=True)
+nltk.download('wordnet', quiet=True)
 
 app = Flask(__name__)
 CORS(app)
